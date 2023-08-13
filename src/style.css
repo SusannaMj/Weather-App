@@ -1,0 +1,75 @@
+.content {
+  background-color: rgb(153, 153, 252);
+  border: solid 1px rgb(205, 197, 252);
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 10px 10px 20px rgba(106, 75, 243, 0.5);
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  opacity: 0.8;
+}
+.homepage {
+  font-size: 30px;
+}
+
+img {
+  width: 30px;
+  position: relative;
+  top: -12px;
+}
+.City {
+  font-size: 40px;
+}
+.date {
+  font-size: 20px;
+}
+.detail.Today {
+  font-size: 30px;
+}
+.today {
+  padding-top: 50px;
+  color: rgb(93, 93, 236);
+}
+
+.TempToday {
+  font-size: 70px;
+}
+.details {
+  text-align: center;
+}
+
+.card {
+  margin: 50px auto;
+  line-height: 35px;
+}
+.card-body {
+  background-color: #ccccfe;
+  box-shadow: 0 10px 20px rgba(106, 75, 243, 0.5);
+}
+.col {
+  text-align: center;
+}
+.col-4 {
+  text-align: center;
+  color: rgb(93, 93, 236);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weekday {
+  border: solid 1px;
+  border-radius: 50px;
+  line-height: 60px;
+  border-color: #dee2e6;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin-bottom: 60px;
+  box-shadow: 0 10px 20px rgba(106, 75, 243, 0.5);
+  color: aliceblue;
+  font-size: 20px;
+}

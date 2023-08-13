@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <h1><div class="homepage">MyWeather.com</div></h1>
+        <form id="selectCountry">
+          <div class="row">
+            <div class="col-6">
+              <input
+                class="form-control"
+                id="exampleInputCity"
+                placeholder="City"
+              />
+            </div>
+            <div class="col-2">
+              <button type="submit" class="btn btn-primary" id="search">
+                Select
+              </button>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-primary" id="current">
+                current location
+              </button>
+            </div>
+          </div>
+        </form>
+        <form>
+          <div class="row today">
+            <div class="col-5">
+              <h2>
+                <span class="location"><img src="src/images/pin.jpg" /> </span
+                ><span class="City" id="chosenCity">Gold Coast</span>
+              </h2>
+              <h3><span class="date">Wednesday 12th July 20:00</span></h3>
+            </div>
+            <div class="col-4">
+              <span class="TempToday">
+                <strong
+                  ><span id="tempValue">17</span
+                  ><a href="" id="degreeCelsius">°C</a>/<a
+                    href=""
+                    id="degreeFahrenheit"
+                    >°F</a
+                  ></strong
+                ></span
+              >
+            </div>
+            <div class="col-2 details">
+              <br />
+              <div>☀</div>
+              <div class="date" id="weather">sunny</div>
+            </div>
+          </div>
+        </form>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4">☂</div>
+              <div class="col-4">🌫</div>
+              <div class="col-4">😎</div>
+            </div>
+            <div class="row">
+              <div class="col-4"><span id="humidity"></span>%</div>
+              <div class="col-4"><span id="wind"></span>km/h</div>
+              <div class="col-4" id="rain"></div>
+            </div>
+            <div class="row">
+              <div class="col-4">Humidity</div>
+              <div class="col-4">Wind</div>
+              <div class="col-4">Rain</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <div class="weekday">
+              <div class="col">Thursday</div>
+              <div class="col">☀</div>
+              <div class="col">21°C</div>
+              <div class="col">5%</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="weekday">
+              <div class="col">Friday</div>
+              <div class="col">☀</div>
+              <div class="col">22°C</div>
+              <div class="col">6%</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="weekday">
+              <div class="col">Saturday</div>
+              <div class="col">⛅</div>
+              <div class="col">23°C</div>
+              <div class="col">6%</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="weekday">
+              <div class="col">Sunday</div>
+              <div class="col">☀</div>
+              <div class="col">23°C</div>
+              <div class="col">7%</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="weekday">
+              <div class="col">Monday</div>
+              <div class="col">🌦</div>
+              <div class="col">21°C</div>
+              <div class="col">36%</div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
