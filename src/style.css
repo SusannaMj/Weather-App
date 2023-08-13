@@ -74,5 +74,6 @@ img {
   font-size: 20px;
 }
 .githubLink {
+  display: block;
   text-align: center;
 }
